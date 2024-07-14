@@ -1,0 +1,195 @@
+/* إعدادات عامة لعناصر HTML الرئيسية */
+body, h1, h2, h3, p, ul, ol, li, table, th, td, img, button, form, input, textarea, details, summary {
+    margin: 0;/*: هذه الخاصيتان تقومان بإزالة أي هوامش وحواف فارغة */
+    padding: 0;
+    font-family: 'Arial', PT Bold Heading; /* تعريف الخط الرئيسي */
+    color: #000; /*  الاسود لون النص الأساسي */
+}
+
+/* تخصيص النصوص التي تحتوي على تأكيد النص والتعزيز */
+em,strong {
+    font-family: "مميز", Akhbar MT;
+    font-size: 1.2em; /* حجم النص بوحدة em */
+}
+
+/* تخصيصات عامة للصفحة */
+body {
+    
+    line-height: 1.6; /* ارتفاع السطر */
+    font-family: 'Arial', Akhbar MT; /* نوع الخط */
+    padding: 15px; /* هامش داخلي للجسم */
+    text-align: center; /* محاذاة النص في المركز */
+	
+}
+
+/* تخصيصات للعناوين */
+h1 {
+    font-size: 38px; /* حجم الخط */
+    font-weight: bold; /* سمك الخط */
+    text-align: center; /* محاذاة النص في المركز */
+    margin-bottom: 38px; /* هامش من الأسفل */
+    color: : #000000; /* لون أزرق داكن*/
+}
+
+h2 {
+    font-size: 30px; /* حجم الخط للعناوين الفرعية */
+    text-align: center; /* محاذاة النص في المركز */
+    margin-bottom: 30px; /* هامش من الأسفل */
+    color: #1a237e; /*  لون أزرق داكن لون النص */
+}
+
+h3 {
+    font-size: 20px; /* حجم الخط للعناوين الفرعية */
+    text-align: center; /* محاذاة النص في المركز */
+    margin-bottom: 20px; /* هامش من الأسفل */
+    color: #5c6bc0; /* لون النص */
+}
+
+/* تخصيصات للجداول */
+table {
+    width: 75%; /* العرض */
+    margin: 20px auto; /* هامش داخلي وتوسيط أفقي */
+    border-radius: 10px; /* تقويس الحواف */
+    overflow: hidden; /* عدم تجاوز الحواف */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); /* ظل للجدول */
+    background-color: rgb(227, 242, 253); /* لون الخلفية */
+	}
+
+table, th, td {
+    border: 0.3px solid gray; /* سمك ولون الحدود */
+}
+
+th, td {
+    padding: 12px; /* هامش داخلي */
+    text-align: center; /* محاذاة النص في المركز */
+}
+
+/* تخصيصات للصور داخل الجداول */
+td img {
+    display: block; /* تتحكم في كيفية عرض العناصر في صفحة الويب*/ 
+    margin: 0 auto; /* توسيط أفقي */
+    width: 150px; /* العرض */
+    height: 150px; /* الارتفاع */
+    border-radius: 50%; /* تقويس الحواف لتكون دائرية */
+}
+
+/* تخصيصات للقوائم (Ordered و Unordered) */
+ol, ul {
+    width: 75%; /* العرض */
+    margin: 20px auto; /* هامش داخلي وتوسيط أفقي */
+    list-style-type: none; /* إزالة نقاط القائمة */
+    margin: 20px 0; /* هامش من الأعلى والأسفل */
+    padding: 0; /* هامش داخلي */
+}
+
+/* تخصيصات للقوائم داخل الأزرار */
+ol li, ul li {
+    width: 75%; /* العرض */
+    margin-bottom: 10px; /* هامش من الأسفل */
+    background-color: rgb(185, 246, 202); /* لون الخلفية */
+    color: #5c6bc0; /* لون النص */
+    padding: 12px; /* هامش داخلي */
+    font-size: 16px; /* حجم الخط */
+    border-radius: 8px; /* تقويس الحواف */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل للعناصر */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* تأثيرات تحويل */
+}
+
+ol li:hover, ul li:hover {
+    transform: translateY(-8px); /* تحويل الانتقال عند التحويم */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9); /* ظل عند التحويم */
+}
+
+/* تخصيصات لعناصر Details و Summary */
+details {
+    margin-bottom: 14px; /* هامش من الأسفل */
+}
+details summary {
+    font-weight: bold; /* سمك الخط */
+    cursor: pointer; /* نمط المؤشر */
+    font-size: 18px; /* حجم الخط للعنوان */
+    color: #5c6bc0; /* لون النص */
+}
+details ul {
+    padding-left: 20px; /* هامش داخلي */
+}
+/* تخصيصات للنماذج */
+form {
+    width: 75%; /* العرض */
+    margin: 20px auto; /* هامش داخلي وتوسيط أفقي */
+    background-color: rgb(227, 242, 253); /* لون الخلفية */
+    padding: 20px; /* هامش داخلي */
+    border-radius: 8px; /* تقويس الحواف */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* ظل للنموذج */
+}
+
+form div {
+    margin-bottom: 12px; /* هامش من الأسفل */
+}
+
+form label {
+    font-weight: bold; /* سمك الخط */
+    font-size: 18px; /* حجم الخط */
+    color: #002752; /* لون النص */
+}
+
+form textarea {
+    width: calc(100% - 24px); /* العرض */
+    padding: 0px; /* هامش داخلي */
+    font-size: 16px; /* حجم الخط */
+    border-radius: 4px; /* تقويس الحواف */
+    border: 1px solid #ccc; /* حدود العنصر */
+    margin-bottom: 12px; /* هامش من الأسفل */
+}
+
+form input[type="submit"] {
+    background-color: #004085; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 12px 24px; /* هامش داخلي */
+    font-size: 18px; /* حجم الخط */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* نمط المؤشر */
+    border-radius: 4px; /* تقويس الحواف */
+}
+
+form input[type="submit"]:hover {
+    background-color: #002752; /* لون الخلفية عند التحويم */
+}
+/* تخصيصات عامة أخرى */
+* {
+    /* تخصيص خاص بالصفحة ولنفس */
+    /* عنصر الروابط الاجتماعية */
+    .menu {
+		    width:20%; /* العرض */
+        display: flex; /* إظهار عناصر الأزرار بشكل أفقي */
+        justify-content: center; /* محاذاة الأزرار في وسط القائمة */
+        list-style-type: none; /* إزالة القائمة من النقاط */
+        padding: 0; /* هامش داخلي */
+    }
+    .menu li {
+        margin: 0 5px; /* هامش داخلي */
+    }
+
+    .menu li button {
+        width: 10px; /* العرض */
+        height: 20px; /* الارتفاع */
+        padding: 10px 20px; /* هامش داخلي */
+        border: none; /* إزالة الحدود */
+        background-color: #1a237e; /* لون الخلفية */
+        cursor: pointer; /* نمط المؤشر */
+        border-radius: 4px; /* تقويس الحواف */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل للزر */
+    }
+
+    .menu li button:hover {
+        background-color: #0d1847; /* لون الخلفية عند التحويم */
+    }
+}
+
+/* تخصيصات خاصة بالصفحة ولنفس */
+body {
+    background-image: url('backqunod.jpg');
+    background-size: cover; /* تغطية الخلفية */
+    background-position: center; /* محاذاة الصورة في المركز */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+}
